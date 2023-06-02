@@ -34,15 +34,7 @@ def dibujar_cara_feliz():
         "  |   ∆   |",
     …
 
-def dibujar_calavera():
-    calavera = [
-        "    .-''-.",
-        "   /       \\",
-        "  |         |",
-        "  |  R.I.P.  |",
-        "  |         |",
-        "   \\       /",
-        "    `'---'`"
+
     ]
     
     for linea in calavera:
@@ -56,28 +48,8 @@ def jugar_golosa():
     print("Estoy pensando en un número entre 1 y 25.")
     print("Tu objetivo es adivinarlo en la menor cantidad de intentos.")
     
-    while True:
-        print()
-        dibujar_golosa(intentos)
+    
         
-        intento = int(input("Ingresa tu número: "))
-        intentos += 1
         
-        if intento < objetivo:
-            print("El número que estás buscando es más grande.")
-        elif intento > objetivo:
-            print("El número que estás buscando es más pequeño.")
-        else:
-            print("¡Felicidades! ¡Has adivinado el número en {} intentos!".format(intentos))
-            dibujar_cara_feliz()
-            break
-        
-        if intentos == 6:
-            print()
-            dibujar_golosa(intentos)
-            print("¡Lo siento! Has agotado tus intentos.")
-            print("El número que estaba buscando era: {}".format(objetivo))
-            dibujar_calavera()
-            break
 
     
