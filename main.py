@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+  if intentos == 0:
+=======
  import random
 
 def dibujar_golosa(intentos):
@@ -10,6 +13,7 @@ def dibujar_golosa(intentos):
     ]
     
     if intentos == 0:
+>>>>>>> d9414bf8b498fd3e3b96fe08b76fcb4a07d827b3
         golosa[2] = " |       O "
     elif intentos == 1:
         golosa[1] = " |       | "
@@ -22,6 +26,9 @@ def dibujar_golosa(intentos):
     elif intentos == 5:
         golosa[3] = " \\      /| "
     elif intentos == 6:
+<<<<<<< HEAD
+        golosa[3] = " \\      /|\\"
+=======
         golosa[3] = " \\      /|\\"
     
     for linea in golosa:
@@ -42,3 +49,5 @@ def jugar_golosa():
         
 
     
+>>>>>>> d9414bf8b498fd3e3b96fe08b76fcb4a07d827b3
+print ("hola mundo")
