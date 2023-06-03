@@ -4,9 +4,9 @@ def dibujar_golosa(intentos):
     golosa = [
         "   -----   ",
         " /       \\ ",
-        " |       | ",
+        " |       |  ",
         " \\       / ",
-        "   -----   "
+        "   -----    ",
     ]
     
     if intentos == 0:
@@ -27,18 +27,7 @@ def dibujar_golosa(intentos):
     for linea in golosa:
         print(linea)
 
-def dibujar_cara_feliz():
-    cara_feliz = [
-        "   \\ˆˆˆˆˆˆˆ/",
-        "  |  O O  |",
-        "  |   ∆   |",
-    …
 
-
-    ]
-    
-    for linea in calavera:
-        print(linea)
 
 def jugar_golosa():
     objetivo = random.randint(1, 25)
