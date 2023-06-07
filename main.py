@@ -1,64 +1,44 @@
-<<<<<<< HEAD
-  if intentos == 0:
-=======
- import random
-
-def dibujar_golosa(intentos):
-    golosa = [
-        "   -----   ",
-        " /       \\ ",
-        " |       | ",
-        " \\       / ",
-        "   -----   "
-    ]
-    
-    if intentos == 0:
->>>>>>> d9414bf8b498fd3e3b96fe08b76fcb4a07d827b3
-        golosa[2] = " |       O "
-    elif intentos == 1:
-        golosa[1] = " |       | "
-    elif intentos == 2:
-        golosa[1] = " |      /| "
-    elif intentos == 3:
-        golosa[1] = " |      /|\\"
-    elif intentos == 4:
-        golosa[3] = " \\       | "
-    elif intentos == 5:
-        golosa[3] = " \\      /| "
-    elif intentos == 6:
-<<<<<<< HEAD
-        golosa[3] = " \\      /|\\"
-=======
-        golosa[3] = " \\      /|\\"
-    
-    for linea in golosa:
+ for linea in golosa:
         print(linea)
 
 def dibujar_cara_feliz():
     cara_feliz = [
-        "   \\ˆˆˆˆˆˆˆ/",
+        "  \\ˆˆˆˆˆˆˆ/",
         "  |  O O  |",
         "  |   ∆   |",
-    …
+        "    \\___/"
+    ]
+    
+    for linea in cara_feliz:
+        print(linea)
 
-
+def dibujar_calavera():
+    calavera = [
+        "    .-''-.",
+        "   /       \\",
+        "  |         |",
+        "  |  R.I.P. |",
+        "  |         |",
+        "   \\       /",
+        "    `'---'`"
     ]
     
     for linea in calavera:
         print(linea)
 
 def jugar_golosa():
-    objetivo = random.randint(1, 25)
-    intentos = 0
-    
     print("¡Bienvenido a La Golosa!")
-    print("Estoy pensando en un número entre 1 y 25.")
-    print("Tu objetivo es adivinarlo en la menor cantidad de intentos.")
+    print("¡Gira la ruleta para obtener tu número de vidas!")
     
-    
+    while True:
+        ruleta = input("Presiona 'R' para girar la ruleta: ")
         
-        
-
+        if ruleta.upper() == "R":
+            num_vidas = random.randint(1, 8)
+            print("¡Has girado la ruleta! Tienes {} vidas.".format(num_vidas))
+            break
+        else:
+            print("Ingresa 'R' para girar la ruleta.")
     
->>>>>>> d9414bf8b498fd3e3b96fe08b76fcb4a07d827b3
-print ("hola mundo")
+    objetivo = random.randint(1, 100)
+    intentos = 0
